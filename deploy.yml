@@ -1,0 +1,4 @@
+- hosts: apache
+  tasks: 
+        - name: copy
+          copy: src=index.html dest=/var/www/html/index.html copy=no
