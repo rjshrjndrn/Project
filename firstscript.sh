@@ -1,4 +1,4 @@
 #!/bin/sh
-x=1
+x=5
 y=2
 echo "sum=`expr $x + $y`"
