@@ -2,7 +2,7 @@
   tasks: 
         - name: Copy the assests
           become: yes
-          copy: src=assets dest=var/www/html/ force=yes
+          copy: src=assets dest=var/www/html/ force=yes recurse=yes
         - name: copy
           become: yes
           copy: src=index.html dest=/var/www/html/index.html force=yes
