@@ -1,8 +1,11 @@
 - hosts: apache
   tasks: 
+        - name: create
+          become: yes
+          file: path=/var/www/html/assets state=directory
         - name: Copy the assests
           become: yes
-          copy: src=assets dest=/var/www/html/ force=yes recurse=yes
+          copy: src=assets/* dest=/var/www/html/assets force=yes recurse=yes
         - name: copy
           become: yes
           copy: src=index.html dest=/var/www/html/index.html force=yes
