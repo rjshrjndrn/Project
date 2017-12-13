@@ -1,2 +1,2 @@
 [apache]
-localhost ansible_connection=local ansible_ssh_user=root
+localhost ansible_connection=local ansible_sudo_pass=jenkins ansible_ssh_user=jenkins
