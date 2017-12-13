@@ -6,10 +6,11 @@
           
         - name: Copy the assests
           become: yes
-          copy: src=/var/lib/jenkins/workspace/Deploy/assets/devcon.png dest=/var/www/html/assets/ force=yes recurse=yes
+          copy: src=/var/lib/jenkins/workspace/Deploy/assets/devcon.png dest=/var/www/html/assets/ 
+          
         - name: Copy the assests
           become: yes
-          copy: src=/var/lib/jenkins/workspace/Deploy/assets/poster-01.jpg dest=/var/www/html/assets/ force=yes recurse=yes
+          copy: src=/var/lib/jenkins/workspace/Deploy/assets/poster-01.jpg dest=/var/www/html/assets/ 
        
         - name: copy
           become: yes
