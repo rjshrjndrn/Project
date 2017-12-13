@@ -1,8 +1,17 @@
 - hosts: apache
   tasks: 
+        - name: create
+          become: yes
+          file: path=/var/www/html/assets state=directory
+          
         - name: Copy the assests
           become: yes
-          copy: src=assets dest=var/www/html/ force=yes recurse=yes
+          copy: src=/var/lib/jenkins/workspace/Deploy/assets/devcon.png dest=/var/www/html/assets/ 
+          
+        - name: Copy the assests
+          become: yes
+          copy: src=/var/lib/jenkins/workspace/Deploy/assets/poster-01.jpg dest=/var/www/html/assets/ 
+       
         - name: copy
           become: yes
           copy: src=index.html dest=/var/www/html/index.html force=yes
