@@ -2,38 +2,32 @@
 <html>
  <head>
  	<title>Devops</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  </head>
  <body>
-	<div class="w3-content w3-section">
-	  <div style="position: absolute;font-size: x-large;top: 22px;color: azure;text-align: center;width: 1206px;"><h1>Welcome Amol!</h1></div>
-	  <img class="mySlides" src="assets/devcon.png" alt="1" style="width:100%">
-	  <img class="mySlides" src="assets/poster-01.jpg" alt="2" style="max-width:100%">
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="teams.html">Teams</a></li>
+	</ul>
+
+	<div class="w3-content w3-section" style="text-align:center">
+		<div style="font-size: x-large;top: 22px;color: azure;text-align: center;">
+			<img src="assets/logo.png" />
+		</div>
 	</div>
-
-	<script>
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		for (i = 0; i < x.length; i++) {
-		   x[i].style.display = "none";
-		}
-		myIndex++;
-		if (myIndex > x.length) {myIndex = 1}
-		x[myIndex-1].style.display = "block";
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-
-	window.onload= function()
-	{
-		setTimeout(function(){
-			location.reload(true);
-		}, 8000);
-	}
-
-	</script>
-
+	<div style="text-align:center">
+		<h1>Leave us a message!</h1>
+	</div>
+	<div style="text-align:center">
+		<div class="alert alert-success" role="alert">Awesome work Guys!</div>
+	</div>
+	<footer>
+		<div style="padding:10px;">
+			<div style="text-align:right;">
+				<img src="assets/appdownloadcode.png">
+				<div><span><a href="https://goo.gl/xzudyH">Download the DEVCON APP </a></div>
+			</div>
+		</div>
+	</footer>
  </body>
 </html>
