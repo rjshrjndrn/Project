@@ -11,7 +11,24 @@
         - name: Copy the assests
           become: yes
           copy: src=/var/lib/jenkins/workspace/Deploy/assets/poster-01.jpg dest=/var/www/html/assets/ 
-       
+
+        - name: Copy the assests
+          become: yes
+          copy: src=/var/lib/jenkins/workspace/Deploy/assets/appdownloadcode.png dest=/var/www/html/assets/ 
+
+        - name: Copy the assests
+          become: yes
+          copy: src=/var/lib/jenkins/workspace/Deploy/assets/logo.png dest=/var/www/html/assets/ 
+
         - name: copy
           become: yes
           copy: src=index.html dest=/var/www/html/index.html force=yes
+
+        - name: copy
+          become: yes
+          copy: src=teams.html dest=/var/www/html/teams.html force=yes
+
+        - name: copy
+          become: yes
+          copy: src=index.css dest=/var/www/html/index.css force=yes
+
